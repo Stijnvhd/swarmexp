@@ -1,5 +1,41 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  /* background: url('./achtergrond.png') repeat center center fixed;
+  background-size: cover; */
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  gap: 10px; /* Adjust the space between buttons */
+  z-index: 10;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  border: 2px solid white; /* White border as requested */
+  background-color: rgba(0, 0, 0, 0); /* See-through background */
+  color: white; /* White text */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight white background on hover */
+}
+
+.centraalbeeld {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .App-logo {
